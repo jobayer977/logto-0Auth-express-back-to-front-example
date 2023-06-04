@@ -22,8 +22,8 @@ class ExpressStorage {
 	}
 }
 const config = {
-	appId: 'fm0futjc91zaaq1cr3aww', // Replace with your own appId
-	appSecret: 'krv040n1k2z62fi7s3b2b', // Replace with your own appSecret
+	appId: 'xxxx', // Replace with your own appId
+	appSecret: 'XXX', // Replace with your own appSecret
 	endpoint: 'http://localhost:3001',
 	baseUrl: 'http://localhost:3000',
 };
@@ -59,11 +59,11 @@ app.get('/logto/sign-in-callback', async (request, response) => {
 			`${config.baseUrl}${request.originalUrl}`
 		);
 		const token = await nodeClient.getAccessToken();
-		const idToken = await nodeClient.getIdToken();
-		const isSignInRedirected = await nodeClient.isSignInRedirected(
-			`${config.baseUrl}${request.originalUrl}`
-		);
-		const userInfo = await nodeClient.fetchUserInfo();
+		// const idToken = await nodeClient.getIdToken();
+		// const isSignInRedirected = await nodeClient.isSignInRedirected(
+		// 	`${config.baseUrl}${request.originalUrl}`
+		// );
+		// const userInfo = await nodeClient.fetchUserInfo();
 		response.cookie('token', token, {
 			maxAge: 14 * 24 * 60 * 60 * 1000,
 			httpOnly: true,
