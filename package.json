@@ -1,0 +1,30 @@
+{
+	"name": "express-redirect",
+	"version": "1.0.0",
+	"description": "",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"scripts": {
+		"dev": "nodemon index.ts"
+	},
+	"dependencies": {
+		"@logto/express": "^2.0.1",
+		"@logto/js": "^0.1.16",
+		"@logto/node": "^2.1.1",
+		"cookie-parser": "~1.4.4",
+		"debug": "~2.6.9",
+		"express": "~4.16.1",
+		"express-session": "^1.17.3",
+		"http-errors": "~1.6.3",
+		"jade": "~1.11.0",
+		"jose": "^4.8.1",
+		"js-base64": "^3.7.2",
+		"morgan": "~1.9.1",
+		"node-fetch": "2",
+		"typescript": "^5.1.3"
+	},
+	"devDependencies": {
+		"@types/node": "^20.2.5"
+	}
+}
