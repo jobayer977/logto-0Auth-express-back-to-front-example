@@ -12,6 +12,7 @@
 		"@logto/express": "^2.0.1",
 		"@logto/js": "^0.1.16",
 		"@logto/node": "^2.1.1",
+		"cookie": "^0.5.0",
 		"cookie-parser": "~1.4.4",
 		"debug": "~2.6.9",
 		"express": "~4.16.1",
